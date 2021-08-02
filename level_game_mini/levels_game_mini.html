@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="level_game_mini_style.css" rel="stylesheet" />
+    <script> 
+        function main() {
+            var level = parseInt(localStorage.getItem('maxLevel'));
+            var levelsList = document.getElementsByClassName('level');
+            var levelist1 = document.getElementsByClassName('img_close');
+            var levelist2 = document.getElementsByClassName('img_open');
+            for (var i = 1; i < level; i++) {
+                levelsList[i].classList.remove('disabled');
+                levelsList[i].classList.add('box-shadow');
+
+                levelsList[i].children[0].href = "../game_mini/game_mini.html";
+                levelist1[i].classList.remove('img_key_1');
+                levelist2[i].classList.remove('img_key_3');
+
+            }     
+            
+        }
+        function updateLocalStorage(level) {
+            localStorage.setItem('level', level);
+        }
+
+       
+    </script>
+</head>
+<body onload="main();">
+    <div id="all">
+        <div id="level">
+            <div class="level   box-shadow" >
+                <a onclick="updateLocalStorage(1)" href="../game_mini/game_mini.html"
+                   class="levelid">level 1</a>
+                <img src="img/close.PNG" class="img_close img_key" />
+                <img src="img/open.PNG" class="img_open img_key_2" />
+            </div>
+            <div class="level disabled">
+                <a onclick="updateLocalStorage(2)" href=""
+                   class="levelid">level 2</a>
+                    <img src="img/close.PNG" class="img_close img_key img_key_1" />
+                    <img src="img/open.PNG" class="img_open img_key_2 img_key_3" />
+            </div>
+            <div class="level disabled">
+                <a onclick="updateLocalStorage(3)" href=""
+                   class="levelid">level 3</a>
+                    <img src="img/close.PNG" class="img_close img_key img_key_1" />
+                    <img src="img/open.PNG" class="img_open img_key_2 img_key_3" />
+            </div>
+            <div class="level disabled">
+                <a onclick="updateLocalStorage(4)" href=""
+                   class="levelid">level 4</a>
+         
+                    <img src="img/close.PNG" class="img_close img_key img_key_1"/>
+                    <img src="img/open.PNG" class="img_open img_key_2 img_key_3"  />
+     
+
+            </div>
+            <div class="level disabled" id="level_5">
+                <a onclick="updateLocalStorage(5)" href=""
+                   class="levelid">level 5</a>
+                    <img src="img/close.PNG" class="img_close img_key img_key_1"/>
+                    <img src="img/open.PNG" class="img_open img_key_2 img_key_3"  />
+
+            </div>
+        </div>
+        <a href="../games/games.html">
+            <img src="img/left.png" id="ikon" class="chetz"/>
+        </a>
+        <audio autoplay="autoplay" loop="loop">
+            <source src="sound/soundbakground.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+</body>
+</html>

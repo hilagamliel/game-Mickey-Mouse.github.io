@@ -1,0 +1,105 @@
+﻿body {
+    background-image: url('img/armon_mini.png');
+    background-size: cover;
+    cursor: url(../game_mini/img_game_mini/doll_gray.gif),default;
+   
+}
+@font-face {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+}
+#all{
+    width:100vw;
+    height:100vh;
+}
+#level {
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    left: 27vw;
+    font-family: 'NewWaltDisneyUi-8YdA';
+   
+}
+.level{
+    width:15vw;
+    height:20vh;
+    background-color:white;
+    opacity:0.5;
+    margin-left:3vw;
+    display:inline-block;
+    margin-top:10vh;
+}
+#level_5 {
+    margin-left:12vw;
+}
+
+.disabled{
+    background-color:dimgrey;
+}
+.levelid {
+    position: relative;
+    left: 2.5vw;
+    top: 2.5vh;
+    color: cadetblue;
+    font-size: 3vw;
+}
+a{
+    text-decoration:none;
+}
+.img_key{
+    position:relative;
+    left:5vw;
+    top:1vh;
+    display:none;
+   
+}
+.img_key_1 {
+    position: relative;
+    left: 5vw;
+    top: 1vh;
+    display: block;
+}
+.img_key_2 {
+    position: relative;
+    left: 5vw;
+    width: 4vw;
+    top: 0.9vh;
+    height: auto;
+    display: block;
+   
+}
+.img_key_3 {
+    position: relative;
+    left: 5vw;
+    width: 4.2vw;
+    height: auto;
+    display: none;
+}
+#ikon {
+    position: absolute;
+    top: 82vh;
+    left: 5vw;
+    width: 5vw;
+    height: auto;
+}
+
+.chetz:hover {
+    animation-name: mov_chetz;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mov_chetz {
+    25% {
+        width: 5vw;
+        height: auto;
+    }
+    
+    100% {
+        width: 6vw;
+        height: auto;
+    }
+}
+.box-shadow {
+    box-shadow: 0 0 35px 10px;
+}

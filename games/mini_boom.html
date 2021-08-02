@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'trashimclm-bold-webfont';
+            src: url('../fount/trashimclm-bold-webfont.ttf') format('truetype');
+        }
+        
+        #all {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('img/bakeground_gray.PNG');
+            background-size:cover;
+            position:absolute;
+        }
+        .img_way {
+            width: 25vw;
+            display: block;
+            margin-top: 4vh;
+            box-shadow: 0px 0px 20px 6px;
+            margin-left: 2vw;
+        }
+        #haw_play {
+            left: 66vw;
+            /* top: 10vh; */
+            position: absolute;
+        }
+        #yaad {
+            left: 44vw;
+            position: absolute;
+        }
+        .p_1 {
+            font-family: 'trashimclm-bold-webfont';
+            font-size: 2vw;
+            position: absolute;
+            left: 53.9vw;
+            bottom: 52vh;
+            color: white;
+            z-index: 100;
+        }
+        .way {
+            width: 27vw;
+            /* height: 11vh; */
+            position: absolute;
+            /* background-color: white; */
+            /* box-shadow: 0px 0px 20px 6px; */
+            opacity: 0.5;
+            top: 8vh;
+            position: absolute;
+            /* border-radius: 22px; */
+            color: midnightblue;
+        }
+        #ikon {
+            position: absolute;
+            top: 86vh;
+            left: 5vw;
+            width: 5vw;
+            height: auto;
+        }
+
+        .chetz:hover {
+            animation-name: mov_chetz;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes mov_chetz {
+            25% {
+                width: 5vw;
+                height: auto;
+            }
+
+            100% {
+                width: 6vw;
+                height: auto;
+            }
+        }
+        #logo {
+            position: absolute;
+            width: 8vw;
+            left: 87vw;
+            top: 80vh;
+        }
+        #play {
+            left: 73vw;
+            top: 34vh;
+            font-size: 2vw;
+        }
+        #div_how_play {
+            width: 40vw;
+            height: 25vh;
+            position: absolute;
+            top: 19vh;
+            right: -1vw;
+        }
+        .p_text {
+            font-size: 1.8vw;
+            left: -10vw;
+            top: 39vh;
+            position: relative;
+            margin-top: -4vh;
+            text-align: center;
+            font-family: 'trashimclm-bold-webfont';
+            color: black;
+        }
+        #div_yaad {
+            width: 40vw;
+            height: 25vh;
+            position: absolute;
+            top: 19vh;
+            right: -1vw;
+        }
+        .none{
+            display:none;
+        }
+        #div_yaad {
+            left: 0vw;
+        }
+        .p_text_2 {
+            left: 49vw;
+        }
+        #age {
+            font-size: 2.5vw;
+            position: absolute;
+            font-family: 'trashimclm-bold-webfont';
+            top: 79vh;
+            left: 56vw;
+        }
+        #s {
+            position: absolute;
+            left: 83vw;
+            top: 49.9vh;
+            color: red;
+        }
+        #ikon_hag {
+            position: absolute;
+            width: 7vw;
+            left: 75vw;
+            top: 31vh;
+        }
+        #ikon_yaad {
+            position: absolute;
+            width: 7vw;
+            left: 53.3vw;
+            top: 31vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <a href="../level_game_mini/levels_game_mini.html">
+            <img src="../winner/img/686589.png" id="logo" />
+        </a>
+
+        <img src="img/gray.png" id="haw_play" class="way" onmouseover="look_way()" onmouseout="look_way_return()" />
+        <div id="div_how_play" class="none">
+            <p class="p_text ">
+                אסור לתת למיני ורוד להתנגש עם קוביה אפורה ואסור לתת למיני אפור להתנגש עם קוביה
+                ורודה
+            </p><p class="p_text">
+                להחלפת הצבע של הקוביה ניתן להקיש על מקש הרווח או על הקוביה
+            </p>
+        </div>
+
+        <img src="img/263074.png" id="ikon_hag" />
+        <img src="img/gray.png" id="yaad" class="way" onmouseover="look_yaad()" onmouseout="look_yaad_return()" />
+        <img src="img/771600.png" id="ikon_yaad" />
+        <div id="div_yaad" class="none">
+            <p class="p_text p_text_2">
+                את\ה צריך\ה לסיים את חמשת השלבים של המשחק ויש לך עד 3 פסילות במשחק בכל שלב שסיימת השלב הבא נפתח
+            </p>
+            <p class="p_text p_text_2">
+                ברגע שנפסלת כל השלבים נסגרים
+            </p>
+            <p class="p_text p_text_2" id="s">זהירות</p>
+        </div>
+        <p id="age">המשחק מותאם לגלאי 12-99</p>
+        <a href="../games/games.html">
+            <img src="img/left.png" id="ikon" class="chetz" />
+        </a>
+        <img src="img/מצוין2.png" class="img_way" />
+        <img src="img/לא טוב.png" class="img_way" />
+        <img src="img/מצוין.png" class="img_way" />
+    </div>
+    <audio autoplay="autoplay"loop="loop">
+        <source src="../level_game_mini/sound/soundbakground.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+        function look_way() {
+            document.getElementById("div_how_play").classList.remove('none');
+        }
+        function look_way_return() {
+            document.getElementById("div_how_play").classList.add('none');
+        }
+        function look_yaad(){
+            document.getElementById("div_yaad").classList.remove('none');
+        }
+        function look_yaad_return() {
+            document.getElementById("div_yaad").classList.add('none');
+        }
+      
+    </script>
+</body>
+</html>

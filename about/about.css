@@ -1,0 +1,171 @@
+﻿body {
+    background-image: url('img/bakeground_gray.PNG');
+    background-size: cover;
+    overflow:hidden;
+}
+@font-face {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'trashimclm-bold-webfont';
+    src: url('../fount/trashimclm-bold-webfont.ttf') format('truetype');
+}
+#all{
+    width:100vw;
+    height:100vh;
+}
+#disny {
+    width: 100vw;
+    height: 30vh;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size:10vw;
+    text-align:center;
+}
+
+#ikon {
+    position: absolute;
+    position:fixed;
+    top: 82vh;
+    left: 5vw;
+    width: 5vw;
+    height: auto;
+}
+
+.chetz:hover {
+    animation-name: mov_chetz;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mov_chetz {
+    25% {
+        width: 5vw;
+        height: auto;
+    }
+
+    100% {
+        width: 6vw;
+        height: auto;
+    }
+}
+h1{
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 3vw;
+    margin-bottom: 10vh;
+}
+#p_about{
+    animation-name: p_mov;
+    animation-duration: 3s;
+    animation-iteration-count: 100;
+}
+p{
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 3vw;
+    position: relative;
+    bottom: 7vh;
+}
+
+@keyframes p_mov{
+   10% {
+        font-size: 3vw;
+    }
+    60% {
+        font-size: 3.5vw;
+    }
+    100% {
+        font-size: 4vw;
+    }
+}
+.about_game {
+    width: 13vw;
+    height: 12vh;
+    opacity: 0.5;
+    display: inline-block;
+    position: relative;
+    right: 1vw;
+    top: -18vh;
+    margin-right: 2vw;
+}
+    .about_game img {
+        width: 8vw;
+        height: auto;
+        position: absolute;
+        left: 3vw;
+        top: 2vh;
+    }
+ .about_game img:hover {
+    animation-name: mov_ikon;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+    /*.about_game p {
+        font-family: 'NewWaltDisneyUi-8YdA';
+        font-size: 1.5vw;
+        position: absolute;
+        top: -1vh;
+        left: 1vw;
+    }*/
+@keyframes mov_ikon {
+    25% {
+        width: 8vw;
+        height: auto;
+    }
+
+    100% {
+        width: 9vw;
+        height: auto;
+    }
+}
+.chetz:hover {
+    animation-name: mov_chetz;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mov_chetz {
+    25% {
+        width: 5vw;
+        height: auto;
+    }
+
+    100% {
+        width: 6vw;
+        height: auto;
+    }
+}
+.games {
+    width: 20vw;
+    height: 19vh;
+    background-color: red;
+    opacity: 0.5;
+    display: inline-block;
+    position: relative;
+    right: 2vw;
+    top: 43vh;
+    margin-right: 2vw;
+    box-shadow: 0px 0px 14px 6px;
+}
+.noun_games{
+    display:none;
+}
+img:hover noun_games {
+    display: block;
+}
+.hebrew {
+    font-family: 'trashimclm-bold-webfont','NewWaltDisneyUi-8YdA';
+    font-size: 2.3vw;
+    position: relative;
+    text-align: center;
+    top: -1vh;
+}
+#likes {
+    width: 3vw;
+    height: auto;
+    position: absolute;
+    left: 13vw;
+    bottom: 0vh;
+}
+#fount {
+    font-family: 'NewWaltDisneyUi-8YdA';
+}

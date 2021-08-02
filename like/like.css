@@ -1,0 +1,192 @@
+﻿body {
+    overflow: hidden;
+}
+@font-face {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'trashimclm-bold-webfont';
+    src: url('../fount/trashimclm-bold-webfont.ttf') format('truetype');
+}
+#all {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/‏‏backeground_like.jpg');
+    background-size: 55vw;
+}
+#disny {
+    width: 100vw;
+    height: 30vh;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 10vw;
+    text-align: center;
+    color:black;
+    /*animation-name: color;
+    animation-duration: 15s;
+    animation-iteration-count: 100;*/
+}
+    #disny p{
+        position: absolute;
+        bottom: 58vh;
+        left: 43vw;
+        font-size: 4vw;
+        animation-name: p_mov;
+        animation-duration: 3s;
+        animation-iteration-count: 100;
+    }
+@keyframes p_mov {
+    10% {
+        font-size:4vw;
+        color:black;
+    }
+    60% {
+        font-size: 4.5vw;
+        color:dimgrey;
+    }
+    100% {
+        font-size: 5vw;
+        color: black;
+    }
+}
+.form {
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 40vh;
+    left: 26vw;
+
+    box-shadow: 0px 0px 20px 6px;
+    animation-name: color;
+    animation-duration: 20s;
+    animation-iteration-count: 100;
+}
+.text {
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    top: 22vh;
+    left: 3vw;
+    font-size: 1.5vw;
+    font-family: 'NewWaltDisneyUi-8YdA','trashimclm-bold-webfont';
+    box-shadow: 0px 0px 10px 1px;
+}
+.p_name {
+    font-size: 2vw;
+    position: absolute;
+    left: 3vw;
+    top: 2.8vh;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    color: black;
+}
+
+.name {
+    width: 30vw;
+    height: 5vh;
+    position: absolute;
+    left: 3vw;
+    top: 11vh;
+    font-size: 1.5vw;
+    font-family: 'NewWaltDisneyUi-8YdA','trashimclm-bold-webfont';
+    box-shadow: 0px 0px 10px 1px;
+}
+.send {
+    width: 5vw;
+    height: 5vh;
+    position: relative;
+    top: 44vh;
+    left: 35vw;
+    margin-left: 2vw;
+    background-color: black;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 1.5vw;
+    /* white-space: pre-wrap; */
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0px 0px 14px 6px;
+    display: inline-block;
+}
+#img_ok {
+    width: 11vw;
+    height: auto;
+    position: absolute;
+    left: 39vw;
+    top: 63vh;
+}
+   
+    #ikon {
+        position: absolute;
+        top: 82vh;
+        left: 5vw;
+        width: 5vw;
+        height: auto;
+    }
+.chetz:hover {
+    animation-name: mov_chetz;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes mov_chetz {
+    25% {
+        width: 5vw;
+        height: auto;
+    }
+    100% {
+        width: 6vw;
+        height: auto;
+    }
+}
+@keyframes color {
+    10% {
+        color: black;
+    }
+
+    20% {
+        color: dimgrey;
+    }
+
+    30% {
+        color: #ff103f;
+    }
+
+    40% {
+        color: black;
+    }
+
+    50% {
+        color: dimgrey;
+    }
+
+    60% {
+        color:#ff103f;
+    }
+
+    70% {
+        color: black;
+    }
+
+    80% {
+        color: dimgrey;
+    }
+
+    90% {
+        color: #ff103f;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+
+#id_enjoy img {
+    width: 6vw;
+    height: auto;
+    position: absolute;
+    left: 68vw;
+    top: 42vh;
+}
+.noun{
+    display:none;
+}

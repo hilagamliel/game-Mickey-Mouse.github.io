@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'NewWaltDisneyUi-8YdA';
+            src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+        }
+        #all {
+            
+            background-image: url('img_doll/mikiki.jpg');
+            /*background-image: url('img_doll/winner2.png');*/
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+        .point {
+            width: 14vw;
+            height: 20vh;
+            position: relative;
+            font-size: 4vw;
+            font-family: 'NewWaltDisneyUi-8YdA';
+            display: inline-block;
+            margin-left: 9vw;
+            margin-top: 37vh;
+            left: 36vw;
+            text-align: center;
+            color: black;
+        }
+        #win {
+            width: 70vw;
+            height: 20vh;
+            position: absolute;
+            top: 10vh;
+            left: 33vw;
+        }
+        .p_win {
+            font-family: 'NewWaltDisneyUi-8YdA';
+            font-size: 11vw;
+            position: absolute;
+            bottom: -25vh;
+            left: 4vw;
+            animation-name: winner_text_mov;
+            animation-duration: 2s;
+            animation-iteration-count: 1000;
+        }
+        @keyframes winner_text_mov {
+            0% {
+                font-size: 10vw;
+                left: 4vw;
+                color: yellow;
+            }
+
+            50% {
+                font-size: 11.5vw;
+                left: 2.5vw;
+                color: black;
+            }
+
+            100% {
+                font-size: 10vw;
+                left: 4vw;
+                color: yellow;
+            }
+        }
+        @keyframes ooup_text_mov {
+            0% {
+                font-size: 10vw;
+                left: 5.5vw;
+                color: yellow;
+            }
+
+            50% {
+                font-size: 11.5vw;
+                left: 4.5vw;
+                color: black;
+            }
+
+            100% {
+                font-size: 10vw;
+                left: 5.5vw;
+                color: yellow;
+            }
+        }
+        .p_ooups {
+            font-family: 'NewWaltDisneyUi-8YdA';
+            font-size: 11vw;
+            position: absolute;
+            bottom: -24vh;
+            left: 12vw;
+            margin-left: 10vw;
+            animation-name: ooup_text_mov;
+            animation-duration: 2s;
+            animation-iteration-count: 1000;
+        }
+        .img {
+            width: 19vw;
+            position: absolute;
+            bottom: 64vh;
+            left: 21vw;
+        }
+        #home {
+            width: 5.7vw;
+            position: absolute;
+            top: 80vh;
+            left: 74vw;
+        }
+        #like {
+            position: absolute;
+            width: 5.7vw;
+            top: 79vh;
+            left: 51vw;
+        }
+        #play {
+            position: absolute;
+            top: 61vh;
+            left: 61vw;
+        }
+    </style>
+</head>
+<body onload="create_point()">
+    <div id="all">
+        <div id="win"></div>
+        <div class="point" id="score"></div>
+        <div class="point" id="Point"></div>
+        <a href="../Home/Home.html"><img src="img_doll/home1.png" id="home" /></a>
+        <a href="../like/like.html"><img src="img_doll/like.png" id="like"/></a>
+        <a href="../mage2/game2.html"> 
+            <img src="img_doll/play.png"id="play" />
+        </a>
+    </div>
+    <script>
+        var point;
+        var score;
+        var p;
+        var i = 0;
+        function create_point() {
+            point = localStorage.getItem('point');
+
+            score = parseInt(localStorage.getItem('score'));
+            if (!score) {
+                localStorage.setItem('score', 0);
+                score = parseInt(localStorage.getItem('score'));
+            }
+            if (point > score) {
+                localStorage.setItem('score', point);
+                score = parseInt(localStorage.getItem('score'));
+            }
+
+            if (point >= 80) {
+                p = document.createElement("p");
+               
+                p.innerHTML = "you winner";
+                p.classList.add("p_win");
+                document.getElementById("win").appendChild(p);
+            }
+
+            else {
+                p = document.createElement("p");
+                p.innerHTML = "ooups";
+                p.classList.add("p_ooups");
+                document.getElementById("win").appendChild(p);
+            }
+            document.getElementById("score").innerHTML = "score: " + score;
+            var clearpoint_interval = setInterval(function () {
+                Point.innerHTML = "points: " + i;
+                if (i == point)
+                    clearInterval(clearpoint_interval);
+                i++;
+            }, 10);
+            //document.getElementById("Point").innerHTML = + point;
+        }
+    </script>
+</body>
+</html>

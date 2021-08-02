@@ -1,0 +1,80 @@
+﻿body {
+    background-image: url('img_home/bakeground_gray.PNG');
+    background-size: cover;
+    overflow: hidden;
+ 
+}
+@font-face {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+}
+#all {
+    width: 100vw;
+    height: 100vh;
+}
+#img {
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    left: 20vw;
+}
+#img_id {
+    position: absolute;
+    bottom: 1vh;
+    right: 0.1vw;
+    width:63vw;
+    height: auto;
+}
+#btn {
+    position: absolute;
+    top: 60vh;
+    left: 20vw;
+    width: 60vw;
+    height: 40vh;
+}
+.div_img_btn {
+    width: 18vw;
+    height: 40vh;
+    display: inline-block;
+}
+.img_btn {
+    position: relative;
+    margin-left: 1.8vw;
+    width: 20vw;
+    height: auto;
+   
+   
+}
+.img_btn:hover{
+animation-name:btn;
+animation-duration:3s;
+animation-iteration-count:100;
+}
+@keyframes btn{
+    15%{
+       opacity:0.9;
+    }   
+    35% {
+        opacity: 0.7;
+    }   
+    75% {
+        opacity:0.3;
+    }   
+    100% {
+        opacity: 0;
+    }
+}
+.noun {
+    position: absolute;
+    margin-left: 1.8vw;
+    width: 20vw;
+    height: auto;
+}
+.level {
+    font-family: 'M008016d';
+    font-size: 7vw;
+    color: gray;
+    position: absolute;
+    left: 10vw;
+    top: 5vw;
+}

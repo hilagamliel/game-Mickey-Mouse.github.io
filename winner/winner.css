@@ -1,0 +1,164 @@
+﻿body {
+   overflow: hidden;
+}
+@font-face {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+}
+#all {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/bakgroundwinner.jpg');
+    background-size: cover;
+    text-align: center;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 10vw;
+    position:absolute;
+}
+h1 {
+    position: absolute;
+    left: 20vw;
+    top: -10vh;
+    font-size: 12vw;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: 100;
+    text-shadow: 0 0 13px;
+}
+#winner_text {
+    position: absolute;
+    top: 23vh;
+    font-size: 8vw;
+    left: 30vw;
+    color: white;
+    animation-name: winner_text_mov;
+    animation-duration: 2s;
+    animation-iteration-count: 100;
+
+}
+
+@keyframes winner_text_mov {
+    0% {
+        font-size: 8vw;
+        left: 30vw;
+        color: white;
+    }
+  
+    50% {
+        font-size: 9.5vw;
+        left: 26vw;
+        color:black;
+    }
+
+    100% {
+        font-size: 8vw;
+        left: 30vw;
+        color:white;
+    }
+}
+.point {
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+    top: 10vh;
+    left: 60vw;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 10vw;
+    text-align: center;
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+}
+p {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 10vw;
+    position: absolute;
+    left: 40vh;
+    top: -10vh;
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+}
+@keyframes color{
+    10%{
+        color:black;
+    }
+    20%{
+        color:gray;
+    }
+    30%{
+        color:deeppink;
+    }
+    40%{
+        color:white;
+    }
+    50% {
+        color: black;
+    }
+    60% {
+        color: gray;
+    }
+    70% {
+        color: deeppink;
+    }
+    80% {
+        color: white;
+    }
+    90% {
+        color: black;
+    }
+    100% {
+        color: deeppink;
+    }
+}
+
+.div_text_like {
+    width: 15vw;
+    height: auto;
+    background-color:black;
+}
+.exist {
+    width: 20vw;
+    height: 12vh;
+    position: relative;
+    top: 67vh;
+    display: inline-block;
+    margin-right: 9vw;
+    right: -5vw;
+    color: pink;
+    text-shadow: 0 0 13px;
+}
+#like {
+    position: absolute;
+    width: 10vw;
+    left: 9vw;
+    top: -4vh;
+}
+    #like:hover {
+        animation-name: mov_like;
+        animation-duration: 4s;
+        animation-iteration-count: 100;
+    }
+#home {
+    position: absolute;
+    width: 10vw;
+    left: 4vw;
+    top: -4vh;
+}
+    #home:hover {
+        animation-name: mov_like;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+@keyframes mov_like{
+    0%{
+        width:10vw;
+    }
+    50%{
+        width:11vw;
+    }
+    100% {
+        width:12vw;
+    }
+}

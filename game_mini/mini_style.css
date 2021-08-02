@@ -1,0 +1,182 @@
+﻿body {
+    background-image: url('img_game_mini/bakeground.png');
+    background-size: cover;
+    overflow: hidden;
+}
+@font-face {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+}
+* {
+    vertical-align: top;
+}
+.img_doll {
+    height: auto;
+    position: absolute;
+  
+}
+.dice {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    display: inline-block;
+    border-collapse: collapse;
+    border-radius: 7px;
+}
+.dice_pink {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    display: inline-block;
+    border-collapse: collapse;
+    border-radius: 7px;
+    background-color: pink;
+   
+}
+.dice_gray {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    display: inline-block;
+    border-collapse: collapse;
+    border-radius: 7px;
+    background-color: gray;
+
+}
+#all {
+    width: 100vw;
+    height: 100vh;
+}
+.dall_noun {
+    display: none;
+}
+.img_game_over {
+    position: absolute;
+    width: auto;
+    height: 50vh;
+    left: 34vw;
+    top: 10vh;
+    bottom: 50vh;
+    z-index: 100;
+}
+.img_winer_game {
+    position: absolute;
+    width: auto;
+    height: 60vh;
+    left: 31vw;
+    bottom: 40vh;
+    z-index: 100;
+}
+.btn {
+    position: absolute;
+    top: 80vh;
+    width: 15vw;
+    height: 8vh;
+    border-collapse: collapse;
+    border-style: hidden;
+    background-color: pink;
+    border-radius: 3vw;
+    border-color: black;
+    color: gray;
+    font-size: 2.5vw;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 0 25px;
+}
+.exist {
+    left: 33vw;
+}
+.btn a {
+    position: relative;
+    top: 1.4vh;
+    left: 0.2vw;
+    color: gray;
+}
+.a_game_over {
+    margin-right: 0.8vw;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    color: gray;
+    font-size: 3.5vw;
+    position:absolute;
+}
+.exist_game_over {
+    width: 20vw;
+    height: 10vh;
+    font-size: 3vw;
+    text-align: center;
+    left: 40vw;
+}
+.agine_contiu {
+    left: 51vw;
+}
+.btn:hover {
+    background-color: gray; 
+    color: pink;
+}
+.btn:hover  a{
+ color: pink;
+}
+.agine:hover {
+    background-color: gray;
+    color: pink;
+}
+
+.Point {
+    position: absolute;
+    color: gray;
+    font-size: 2vw;
+    left: 25vw;
+    top: 3vh;
+    text-align: center;
+}
+.Hart {
+    position: absolute;
+    color: gray;
+    font-size: 2vw;
+    left: 19vw;
+    top: 3vh;
+    text-align: center;
+}
+.img_hart {
+    position: absolute;
+    width: 3vw;
+    height: auto;
+    left: 15vw;
+}
+.img_point {
+    position: absolute;
+    width: 3vw;
+    height: auto;
+    left: 22vw;
+}
+.div_point {
+    position: absolute;
+    width: 20vw;
+    height: 5vh;
+    color: gray;
+    font-family: 'NewWaltDisneyUi-8YdA';
+    text-align: center;
+    font-size: 3.5vw;
+    left: 40vw;
+    top: 65vh;
+}
+.level {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    font-size: 3vw;
+    color: gray;
+    position: absolute;
+    left: 15vw;
+    top: 2vw;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    color:lightpink;
+}
+.winer_6{
+
+    width:100vw;
+    height:auto;
+}

@@ -1,0 +1,125 @@
+﻿body {
+    background-image: url('img/bakeground_gray.PNG');
+    background-size: cover;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    src: url('../fount/NewWaltDisneyUi-8YdA.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'trashimclm-bold-webfont';
+    src: url('../fount/trashimclm-bold-webfont.ttf') format('truetype');
+}
+#all {
+    width: 100vw;
+    height: 100vh;
+}
+
+#text {
+    font-family: 'NewWaltDisneyUi-8YdA';
+    position: absolute;
+    top: -24vh;
+    left: 26vw;
+    text-align: center;
+    font-size: 15vw;
+    bottom: 40vh;
+    color: #302d2d;
+    text-shadow: 0 0 35px;
+}
+
+.img_a {
+    transition: width 1s, height 1s;
+    width: 35vw;
+    height: auto;
+    margin-right: 9vw;
+    margin-top: 40vh;
+    color: grey;
+    box-shadow: 0px 0px 90px 14px;
+}
+    .img_a:hover {
+        animation-name: mov_img;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        height: auto;
+        transition: width, height;
+    }
+
+@keyframes mov_img {
+  
+    
+    25% {
+        width: 35vw;
+        height: auto;
+    }
+
+    100% {
+        width: 40vw;
+        height: auto;
+    }
+}
+
+#ikon {
+    position: absolute;
+    top: 82vh;
+    left: 5vw;
+    width: 5vw;
+    height: auto;
+}
+.chetz:hover {
+    animation-name: mov_chetz;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes mov_chetz {
+    25% {
+        width: 5vw;
+        height: auto;
+    }
+
+    100% {
+        width: 6vw;
+        height: auto;
+    }
+}
+#img_way {
+    width: 5vw;
+    position: absolute;
+}
+#div_way {
+    width: 20vw;
+    height: 29vh;
+    background-color: white;
+    position: absolute;
+    bottom: 69vh;
+    opacity: 0.4;
+    right: 7vw;
+}
+#div_way p {
+    position: absolute;
+    font-family: 'trashimclm-bold-webfont';
+    font-size: 3vw;
+    top: -5vh;
+    text-align:center;
+}
+.none {
+    display: none;
+}
+.img_way {
+    width: 7vw;
+    display: inline-block;
+    top: 1vh;
+    margin-top: 14vh;
+    margin-right: 2vw;
+    position: relative;
+    right: 0vw;
+}
+#x {
+    position: absolute;
+    right: 23.8vw;
+    top: 2.1vh;
+    margin-bottom: 19vh;
+    z-index: 100;
+}
